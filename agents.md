@@ -58,3 +58,9 @@ exclude_globs = ["**/*.sh", "**/*.bash", "**/*.zsh", "**/*.jl", "**/*.py", "**/*
 #### Per-project
 Create AGENTS.MD in mixture of commands and instructions how to use package manager, what to ignore, and so on. 
 See [examples/julia/AGENTS.md] for a Julia use case.
+
+
+### Codex Cloud 
+- Use network access if you must, but if it's just for installing, use the environment. Let CGPT to generate you an install script. On start of the image it has network access. Network access can hinder caching.
+- Use incremental pull requests to extract code changes
+- Link your Github account, but only the repo you want to use.
