@@ -10,7 +10,7 @@
 - Default Julia: `1.11` (use `julia +1.11`).
 - Activate the package environment in repo root before any Julia code:
   ```bash
-  julia +1.10 -e 'using Pkg; Pkg.activate("."); Pkg.instantiate()'
+  julia +1.11 -e 'using Pkg; Pkg.activate("."); Pkg.instantiate()'
   ```
 
 ## Common commands
