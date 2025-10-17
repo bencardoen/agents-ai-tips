@@ -10,7 +10,7 @@ Happy to accept PRs.
 
 
 ## Structure 
-- agents.md : Configuration tips for agents (Codex)
-- general.md : General tips/tricks
-- cgpt.md : ChatGPT specific
-- ppx.md : Perplexity specific
+- examples: holds pregenerated configuration files for replication
+- [agents.md](agents.md): Configuration tips for agents (Codex)
+- [general.md](general.md): General tips/tricks
+- [ppx.md](ppx.md): Perplexity specific
