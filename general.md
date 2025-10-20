@@ -13,14 +13,15 @@
 - Refactor generated code, and tell the agent to use pull requests, especially before and after major changes. 
 - Tell it always to run tests on completion to show things work. 
 - Before Agent Mode, use Chat Mode to review the workplan.
-
+- For projects with code
+    - Export conversations and agent logs in .md, in a separate directory so you can track brainstorming, code snippets etc. Permalinks may not be that permanent, backups are essential. 
 
 
 ### Troubleshooting
 #### VSCode 
 - Check that Sync isn't clobbering your local settings if you switch agents/authentication.
 
-Quick reminders that apply no matter which assistant you are using.
+
 
 ## Stay Grounded
 - Read the project README, `CONTRIBUTING`, and existing scripts before delegating work to an agent.
