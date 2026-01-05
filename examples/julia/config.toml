@@ -1,0 +1,30 @@
+# ~/.codex/config.toml — corrected
+## For Julia, you do need to give it access to limited directories, see below
+
+# Choose one auth method (optional; Codex can auto-detect)
+# preferred_auth_method = "chatgpt"
+# preferred_auth_method = "apikey"
+
+# Ask before any action that goes outside the safe scope.
+approval_policy = "on-request"
+
+# Global network toggle (boolean). Use true to allow downloads (Pkg, juliaup).
+network_access = true
+
+# Filesystem sandbox:
+# - read/write only inside the active workspace
+# - anything outside requires approval unless whitelisted below
+sandbox_mode = "workspace-write"
+
+# Workspace-write sandbox options
+[sandbox_workspace_write]
+# Allow network while in workspace-write sandbox (boolean)
+network_access = true
+
+# Additional absolute paths outside the workspace that are allowed without prompting.
+# Avoid environment variables here; use fully-resolved paths.
+allowed_paths = [
+  "/home/bcardoen/.julia",
+  "/home/bcardoen/.juliaup",
+  "/home/bcardoen/.cache/juliaup"
+]
